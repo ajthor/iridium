@@ -1,5 +1,5 @@
 // Standard headers.
-#include <stdio.h>
+#include <iostream>
 #include <stdlib.h>
 
 // Include GLEW.
@@ -12,6 +12,8 @@ GLFWwindow* window;
 
 // Include GLM.
 #include <glm/glm.hpp>
+
+using namespace std;
 
 
 int main(int argc, char const *argv[]) {
