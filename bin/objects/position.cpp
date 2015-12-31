@@ -1,12 +1,34 @@
+#include "uniqueid.h"
+
 #include "position.h"
 
 // Functions for moving in each direction and rotating.
-void MoveX(float X);
-void MoveY(float Y);
-void MoveZ(float Z);
-void CartesianMove(float X, float Y, float Z);
+void Position::MoveX(float relX) {
+  X += relX;
+}
+void Position::MoveY(float relY) {
+  Y += relY;
+}
+void Position::MoveZ(float relZ) {
+  Z += relZ;
+}
+void Position::CartesianMove(float relX, float relY, float relZ) {
+  X += relX;
+  Y += relY;
+  Z += relZ;
+}
 
-void MoveA(float A);
-void MoveB(float B);
-void MoveC(float C);
-void Rotate(float A, float B, float C);
+void Position::MoveA(float relA) {
+  A += relA;
+}
+void Position::MoveB(float relB) {
+  B += relB;
+}
+void Position::MoveC(float relC) {
+  C += relC;
+}
+void Position::Rotate(float relA, float relB, float relC) {
+  A += relA;
+  B += relB;
+  C += relC;
+}
